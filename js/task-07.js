@@ -1,5 +1,9 @@
 const inputRange = document.querySelector("#font-size-control");
 
 const textSize = document.querySelector("#text");
-// text.classList.add("text7");
-textSize.style.frontSize = "px";
+
+textSize.style.fontSize = `${inputRange.value}px`;
+
+inputRange.addEventListener("input", (event) => {
+  textSize.style.fontSize = `${inputRange.value}px`;
+});
