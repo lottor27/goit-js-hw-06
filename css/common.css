@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+ 
 }
 
 body {
@@ -11,6 +12,7 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  
 }
 
 input {
@@ -22,3 +24,26 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.gallary{
+  margin: 0, auto;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.newImage{
+  width: 600px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+
+.item{
+  list-style-type: none;
+  width: 600px;
+padding-bottom: 40px;
+
+}
+
