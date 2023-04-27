@@ -14,49 +14,23 @@ const images = [
 ];
 
 
-images.forEach((image) => {
-  const imageElement = document.querySelector(".gallery");
 
-  const newImageList = document.createElement("li");
-  newImageList.classList.add("item");
-  
+
+const imageElement = document.querySelector(".gallery");
+
+const imageList = images.map((image) => {
+const newImageList = document.createElement("li");
+newImageList.classList.add("item");
   imageElement.appendChild(newImageList);
-
   newImageList.insertAdjacentHTML(
     "afterbegin",
-    `<img class="newImage" src=${image.url} alt=${image.alt}>`
+    `<img class="newImage" src="${image.url}" alt="${image.alt}">`
   );
-
-  console.log(imageElement);
-}, 0);
-
+  return imageElement;
+})
 
 
-
+console.log(imageElement);
 
 
 
-
-
-
-
-
-
-
-
-
-// images.forEach((image) => {
-//   const newImageList = document.createElement("li");
-//   newImageList.classList.add("item");
-
-//   const newImage = document.createElement("img");
-//   newImage.classList.add("img");
-//   newImage.src = image.url;
-//   newImage.alt = image.alt;
-
-//   newImageList.appendChild(newImage);
-//   console.log(newImageList);
-
-//   const allNewImages = document.querySelector(".gallery");
-//   allNewImages.appendChild(newImageList);
-// }, 0);

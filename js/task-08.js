@@ -1,5 +1,6 @@
 const form = document.querySelector(".login-form");
 
+
 const emailInputRequired = form.firstElementChild.firstElementChild.setAttribute(
     "required",
     "@");
@@ -50,9 +51,12 @@ function onFormSubmit(event) {
     //     console.log('value', value);
     //     console.log("name", name);
     // })
+    form.reset();
 }
 
-
+const buttonReset = document.querySelector("button");
+// buttonReset.addEventListener("")
+//    document.myForm.reset();
 
 
 

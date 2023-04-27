@@ -6,10 +6,9 @@ const inputField = document.querySelector('#validation-input')
 
 inputField.addEventListener("blur", (event) => {
 
-  if (inputField.value.length == "6") {
+  if (inputField.value.length !== inputField.dataset.length * 1) {
     inputField.classList.add("invalid");
-  }else {
-      
+  } else {
     inputField.classList.remove("invalid");
     inputField.classList.add("valid");
   }
