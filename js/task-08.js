@@ -6,27 +6,12 @@ const emailInputRequired = form.firstElementChild.firstElementChild.setAttribute
     "@");
 
 
-// const emailInput = form.firstElementChild;
-// console.log(emailInput);
-// const emailRequired = emailInput.firstElementChild;
-// console.log(emailRequired);
-// emailRequired.setAttribute("required", "@");
 
 const passwordInputRequired =
 form.lastElementChild.previousElementSibling.firstElementChild.setAttribute(
     "required",
     " "
 );
-
-// const btnInput = form.lastElementChild;
-// console.log(btnInput);
-// const lableInput = btnInput.previousElementSibling;
-// console.log(lableInput);
-// const passwordReq = lableInput.firstElementChild;
-// console.log(passwordReq);
-// passwordReq.setAttribute("required", " ");
-
-
 
 
 
@@ -46,17 +31,9 @@ function onFormSubmit(event) {
 
     console.log(formData);
 
-    // const formData = new FormData(event.currentTarget)
-    // formData.forEach((value, name) => {
-    //     console.log('value', value);
-    //     console.log("name", name);
-    // })
     form.reset();
 }
 
-const buttonReset = document.querySelector("button");
-// buttonReset.addEventListener("")
-//    document.myForm.reset();
 
 
 
